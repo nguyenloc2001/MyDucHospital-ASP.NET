@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+    <meta name="keywords" CONTENT="" />
+    <meta name="description" CONTENT="" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content=" | TRUST.vn" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGH04BETH8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RGH04BETH8');
+    </script>
+    <link rel="canonical" href="https://myduchospital.vn/vn/" />
+    <link rel="alternate" media="handheld" href="https://myduchospital.vn/vn/" />
+    <link rel="SHORTCUT ICON" href="/vnt_upload/File/Image/icon_benh_vien_my_duc.jpg" type="image/x-icon" />
+    <link rel="icon" href="/vnt_upload/File/Image/icon_benh_vien_my_duc.jpg" type="image/gif" />
+    <link href="../css_js home/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js home/skins/default/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox.css" media="screen" />
+    <link href="../css_js home/skins/default/style/screen.css" rel="stylesheet" type="text/css" />
+    <link href="../css_js home/skins/default/style/custom_style.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../js/slideSlick/css/slick.css" type="text/css" rel="stylesheet"/>
+    <link href="../js/slideSlick/css/slick-theme.css" type="text/css" rel="stylesheet"/> -->
+    <link href="../css_js home/js/menumobile/menumobile.css" type="text/css" rel="stylesheet" />
+    <link href="../css_js home/js/slick/slick.css" type="text/css" rel="stylesheet" />
+    <link href="../css_js home/js/jquery_alerts/jquery.alerts.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../js/menu/menu.css" type="text/css" rel="stylesheet"/> -->
+    <script language="javascript">
+        var ROOT = "../";
+        var ROOT_MOD = "../vn/trang-chu";
+        var DIR_IMAGE = "../skins/default/images";
+        var cmd = "vnTRUST";
+        var lang = "vn";
+        var mem_id = 0;
+        var js_lang = new Array();
+        js_lang['announce'] = "Thông báo";
+        js_lang['error'] = "Báo lỗi";
+    </script>
+    <script type="text/javascript" src="../css_js home/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../css_js home/js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="../css_js home/js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../css_js home/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="../css_js home/js/core.js"></script>
+    <script type="text/javascript" src="../css_js home/js/javascript.js"></script>
+    <script type="text/javascript" src="../css_js home/js/floater_xlib.js"></script>
+    <!-- <script type="text/javascript" src="../js/slideSlick/js/slick.js"></script> -->
+    <script type="text/javascript" src="../css_js home/js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../css_js home/js/menumobile/menumobile.js"></script>
+    <!-- <script type="text/javascript" src="../js/menu/menu.js"></script> -->
+    <script type="text/javascript" src="../css_js home/js/jquery_alerts/jquery.alerts.js"></script>
+    <script type="text/javascript" src="../css_js home/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="../css_js home/js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="../css_js home/js/style.js"></script>
+    <link rel="stylesheet" href="../css_js home/modules/main/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../css_js home/skins/default/style/animate.css" type="text/css" />
+    <script type="text/javascript" src="../css_js home/modules/main/js/main.js"></script>
+    <script type="text/javascript" src="../css_js home/js/my_effect_scroll/my_effect_scroll.js"></script>
+    <link href="../css_js home/skins/default/style/custom.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+            <div class="container">
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>*@
+    <header>
+        <div id='fb-root'></div>
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div id="vnt-wrapper">
+            <div id="vnt-container">
+
+                <div id="vnt-header">
+                    <div class="mainHeader">
+                        <div class="wrapper">
+                            <div class="logo">
+                                <div class="vnt-logo">
+                                    <h1><a onmousedown="return rwt(this,'advertise',1)" href='https://myduchospital.vn/vn/' target='_self' title='Bệnh viện Mỹ Đức'><img src='https://myduchospital.vn/vnt_upload/weblink/logo_1.svg' alt='Bệnh viện Mỹ Đức' class='logo' /></a></h1>
+                                </div>
+                            </div>
+                            <div class="header-tools">
+                                <!-- <div class="languageTop hidden-sm hidden-xs">
+                                    <ul>
+                                        <li class='current'><a href="https://myduchospital.vn/vn/trang-chu.html"><img src="https://myduchospital.vn/vnt_upload/lang/flag-vn.jpg" alt="Tiếng Việt" /><span>Tiếng Việt</span></a></li><li ><a href="https://myduchospital.vn/en/main.html"><img src="https://myduchospital.vn/vnt_upload/lang/flag-en.jpg" alt="English" /><span>English</span></a></li>
+                                    </ul>
+                                </div> -->
+                                <div class="searchTop hidden-sm hidden-xs">
+                                    <script language="javascript">
+                                        function check_search(f) {
+                                            var key_default = "Từ khóa";
+                                            var keyword = f.keyword.value;
+                                            var key_len = f.keyword.value.length;
+                                            if ((keyword == key_default) || (keyword == '')) {
+                                                jAlert("Vui lòng nhập từ khóa", js_lang['announce']);
+                                                f.keyword.focus();
+                                                return false;
+                                            }
+                                            if (key_len < 2) {
+                                                jAlert("Từ khóa tới thiểu là 2 ký tự", js_lang['announce']);
+                                                f.keyword.focus();
+                                                return false;
+                                            }
+                                            return true;
+                                        }
+                                    </script>
+
+                                    <form id="formSearch" name="formSearch" method="post" action="https://myduchospital.vn/vn/tim-kiem.html" onSubmit="return check_search(this);" class="box_search">
+                                        <input name="keyword" id="keyword" type="text" class="text_search" onfocus="if(this.value=='Từ khóa') this.value='';" onBlur="if(this.value=='') this.value='Từ khóa';" value="Từ khóa" />
+                                        <button id="do_submit" name="btn-search" type="submit" value="Tìm"><span><i class="fa fa-search"></i></span></button>
+                                        <input name="do_search" value="1" type="hidden" />
+                                    </form>
+                                </div>
+                                <div class="languageMobile hidden-lg hidden-md">
+                                    <a href="http://myducphunhuan.vn" class="hospital_mobile">
+                                        Mỹ Đức<br />
+                                        Phú Nhuận
+                                    </a>
+
+                                </div>
+                                <div class="menu_mobile hidden-lg hidden-md">
+                                    <div class="icon_menu"><span class="style_icon"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botHeader hidden-sm hidden-xs">
+                        <div class="wrapper">
+                            <div class="menuTop">
+                                <ul>
+                                    <li class='current'><a href="http://myduchospital.vn/vn/trang-chu.html" target="_self">Trang chủ</a></li>
+                                    <li class='has_sub'>
+                                        <a href="https://myduchospital.vn/vn/bac-si.html" target="_self">Bác sĩ</a>
+                                        <ul>
+                                            <li><a href="https://myduchospital.vn/vn/bac-si.html" target="_self">Bác sĩ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='nop'>
+                                        <a href="https://myduchospital.vn/vn/dich-vu.html" target="_self">Dịch vụ</a>
+                                        <div class="megaMenu">
+                                            <div class="grid">
+                                                <div class="col1">
+                                                    <ul>
+                                                        <li><a href="https://myduchospital.vn/vn/ho-tro-sinh-san.html" target="_self">Hỗ trợ sinh sản</a></li>
+                                                        <li><a href="https://myduchospital.vn/vn/kham-phu-san.html" target="_self">Khám Phụ Sản</a></li>
+                                                        <li><a href="https://myduchospital.vn/vn/kham-nhi.html" target="_self">Khám Nhi</a></li>
+                                                        <li><a href="https://myduchospital.vn/vn/dieu-tri-noi-tru.html" target="_self">Điều trị nội trú</a></li>
+                                                        <li><a href="https://myduchospital.vn/vn/xet-nghiem.html" target="_self">Xét Nghiệm</a></li>
+                                                        <li><a href="https://myduchospital.vn/vn/chan-doan-hinh-anh.html" target="_self">Chẩn đoán hình ảnh</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="img"><img src="https://myduchospital.vn/vnt_upload/menu/bg-menu.jpg" alt="Dịch vụ" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="http://ivfmd.vn/" target="_blank">Hỗ trợ sinh sản</a></li>
+                                    <li class='has_sub'>
+                                        <a href="https://myduchospital.vn/vn/kien-thuc-y-khoa.html" target="_self">Kiến thức y khoa</a>
+                                        <ul>
+                                            <li><a href="http://myduchospital.vn/vn/hiem-muon.html" target="_self">Hiếm muộn</a></li>
+                                            <li><a href="https://myduchospital.vn/vn/san-phu-khoa.html" target="_self">Sản phụ khoa</a></li>
+                                            <li><a href="https://myduchospital.vn/vn/noi-tiet-sinh-san.html" target="_self">Nội tiết sinh sản</a></li>
+                                            <li><a href="https://myduchospital.vn/vn/nhi-khoa.html" target="_self">Nhi khoa</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has_sub'>
+                                        <a href="https://myduchospital.vn/vn/tin-tuc.html" target="_self">Thông tin</a>
+                                        <ul>
+                                            <li><a href="https://myduchospital.vn/vn/tuyen-dung.html" target="_self">Tuyển dụng</a></li>
+                                            <li><a href="https://myduchospital.vn/vn/gia-dich-vu.html" target="_self">Giá dịch vụ</a></li>
+                                            <li><a href="https://myduchospital.vn/vn/tintucsukien.html" target="_self">Tin tức – Sự kiện</a></li>
+                                            <li><a href="https://myduchospital.vn/vn/dao-tao-lien-tuc" target="_self">Đào tạo liên tục</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://myduchospital.vn/vn/lien-he.html" target="_self">Liên hệ</a></li>
+                                    
+                                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                                </ul>
+                                <div class="text_domain">
+                                    <a href="http://myducphunhuan.vn">
+                                        Mỹ Đức
+                                        Phú Nhuận
+                                    </a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+        <div id="vnt-footer">
+            <div class="mainFoot">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="logoFoot">
+                                <div class="img"><a onmousedown="return rwt(this,'advertise',1)" href='https://myduchospital.vn/vn/' target='_self' title='Bệnh viện Mỹ Đức'><img src='https://myduchospital.vn/vnt_upload/weblink/logo_1.svg' alt='Bệnh viện Mỹ Đức' /></a></div>
+                                <div class="slo"><a onmousedown="return rwt(this,'advertise',41)" href='http://' target='_blank' title=''><img src='https://myduchospital.vn/vnt_upload/weblink/f.png' alt='' /></a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                            <div class="wowFoot">
+                                <div class="row">
+
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="fanpage">
+                                            <div class='fb-page' data-href='https://www.facebook.com/benh.vien.my.duc' data-height='180' data-small-header='false' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='true'>
+                                                <blockquote cite='https://www.facebook.com/benh.vien.my.duc' class='fb-xfbml-parse-ignore'><a href='https://www.facebook.com/benh.vien.my.duc'></a></blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="socialFoot">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="fanpage">
+                                            <div class='fb-page' data-href='https://www.facebook.com/IVFMD.Vietnam' data-height='180' data-small-header='false' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='true'>
+                                                <blockquote cite='https://www.facebook.com/IVFMD.Vietnam' class='fb-xfbml-parse-ignore'><a href='https://www.facebook.com/IVFMD.Vietnam'></a></blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="socialFoot">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="fanpage">
+                                            <div class='fb-page' data-href='https://www.facebook.com/BS.Vuong.Thi.Ngoc.Lan' data-height='180' data-small-header='false' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='true'>
+                                                <blockquote cite='https://www.facebook.com/BS.Vuong.Thi.Ngoc.Lan' class='fb-xfbml-parse-ignore'><a href='https://www.facebook.com/BS.Vuong.Thi.Ngoc.Lan'></a></blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="socialFoot">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/benh.vien.my.duc/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCEXXDdUt5h1maXGhd_0mm_g" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="copyright">
+                                <div class="copy">Copyright © 2018 <strong>BỆNH VIỆN MỸ ĐỨC</strong></div>
+                            </div>
+
+                            <div class="congthuong">
+                                <div class="address_ft">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <div style="margin-bottom: 0px;">
+                                                <div style="font-weight: bold; font-size: 16px; color: #666666; text-transform: uppercase ; line-height: 15px ; margin-bottom: 2px">Công Ty Cổ Phần Bệnh Viện Đa Khoa Mỹ Đức</div>
+
+                                                <div style="margin-bottom: 2px; font-size: 11px;"><span style="color:#999999;display: inline-block; width: 80px;line-height: 15px ;">Địa chỉ </span>: 04 Núi Thành, Phường 13, Quận Tân Bình</div>
+
+                                                <div style="margin-bottom: 2px; font-size: 11px;"><span style="color:#999999;display: inline-block; width: 80px;line-height: 15px ;">Điện thoại </span>: 028 7308 5885</div>
+
+                                                <div style="margin-bottom: 2px; font-size: 11px;"><span style="color:#999999;display: inline-block; width: 80px;line-height: 15px ;">Email </span>: info@myduchospital.vn</div>
+                                            </div>
+
+                                            <div style="margin-bottom: 2px; font-size: 11px;line-height: 15px ;"><span style="color:#999999; font-style: italic ">Giấy phép kinh doanh số :</span> 0302654552 do Phòng Đăng Ký Dinh Doanh thuộc Sở Kế Hoạch Và Đầu Tư TPHCM cấp lần đầu ngày 02/07/2002</div>
+
+                                            <div style="margin-bottom: 2px; font-size: 11px;line-height: 15px ;"><span style="color:#999999; font-style: italic ">Người đại diện :</span> ông Phùng Huy Tuân</div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div><a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=57264" target="_blank"><img alt="congthuong" src="https://myduchospital.vn/vnt_upload/File/Image/congthuong.png" style="width: 177px; height: 65px;line-height: 15px ;" /></a></div>
+
+                                            <div style="border-top:0px solid #cccccc; border-bottom:0px solid #cccccc; padding: 0px 0px ; clear: both; margin-bottom: 0px;">
+                                                <div class="div"><a href="chinh-sach-thanh-toan.html" style="color: #666666; text-decoration: none;font-size: 11px;line-height: 15px ;">Chính sách thanh toán</a></div>
+
+                                                <div class="div"><a href="chinh-sach-bao-mat-thong-tin.html" style="color: #666666; text-decoration: none;font-size: 11px;line-height: 15px ;">Chính sách bảo mật thông tin</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    @*
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+</body>
+</html>
